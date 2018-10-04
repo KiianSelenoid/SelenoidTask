@@ -19,10 +19,10 @@ pipeline {
         stage("Build and test") {
             steps{
                 echo "Build and test"
-                sh "docker pull selenoid/chrome:65.0"
-                sh "docker pull selenoid/firefox:58.0"
-                sh "docker pull aerokube/selenoid"
-                sh "docker-compose up -d"
+                sh "sudo docker pull selenoid/chrome:65.0"
+                sh "sudo docker pull selenoid/firefox:58.0"
+                sh "sudo docker pull aerokube/selenoid"
+                sh "sudo docker-compose up -d"
                 sh "mvn clean install"
             }
         }
