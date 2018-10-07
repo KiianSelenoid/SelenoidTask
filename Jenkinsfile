@@ -1,6 +1,6 @@
 pipeline {
     environment{
-        GIT_SOURCE = 'https://github.com/spring-projects/spring-petclinic.git'
+        GIT_SOURCE = 'https://github.com/KiianSelenoid/SelenoidTask.git'
         BRANCH = 'master'
     }
 
