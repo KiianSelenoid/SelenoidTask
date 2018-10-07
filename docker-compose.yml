@@ -1,10 +1,10 @@
-   version: '3'
+ version: '3'
    services:
      selenoid:
        network_mode: bridge
        image: aerokube/selenoid
        volumes:
-         - "/docker:/etc/selenoid"
+         - "./browsers.json:/etc/selenoid/browsers.json"
          - "/var/run/docker.sock:/var/run/docker.sock"
        environment:
          - TZ=Europe/Amsterdam
