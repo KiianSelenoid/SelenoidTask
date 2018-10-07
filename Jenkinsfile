@@ -19,7 +19,7 @@ pipeline {
         stage("Build and test") {
             steps{
                 echo "Build and test"
-                sh "docker-compose up -f ../../docker-compose.yml"
+                sh "docker-compose up"
                 sh "mvn clean install"
             }
         }
